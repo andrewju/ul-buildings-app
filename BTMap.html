@@ -1,0 +1,535 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>UL Arts</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<link rel="stylesheet" href="themes/building.min.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?v=3&sensor=true&language=en"></script>
+        <script type="text/javascript">
+             $(document).on('pageshow', '#map_page', function(e, data) {
+
+ 			var marker1, marker2, marker3, marker4, marker5, marker6, marker7, marker8, marker9, marker10, marker11, marker12, maker13, marker14, marker15, marker16, marker17, marker18, marker19, marker20, marker21, marker22, marker23,map,infoWindow,myLocation = { 
+                            lat: 52.674570,
+                            lon: -8.575366
+                        }, 
+                        mapOptions = { 
+                            zoom: 15, 
+                            mapTypeId: google.maps.MapTypeId.PLAN, 
+                            center: new google.maps.LatLng(myLocation.lat, myLocation.lon) 
+                        }; 
+		     var infowindow = new google.maps.InfoWindow({});
+                    $('#map_canvas').css("height", "400px").css("padding", "0px"); 
+                    map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);     
+                    marker1 = new google.maps.Marker({ 
+                        map: map, 
+		          title: "The Foundation Building",
+                        position: new google.maps.LatLng(52.674523, -8.573770), 
+                    });  
+
+                    marker2 = new google.maps.Marker({ 
+         //icon:'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+                        map: map, 
+              title: "Main Building",
+                        position: new google.maps.LatLng(52.674022, -8.572016), 
+                    });    
+        
+          marker3 = new google.maps.Marker({ 
+                        map: map, 
+         //icon:'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+              title: "Medical School",
+                        position: new google.maps.LatLng(52.678042, -8.567401), 
+                    }); 
+
+           marker4 = new google.maps.Marker({ 
+         //icon:'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+                        map: map, 
+              title: "University Bridge",
+                        position: new google.maps.LatLng(52.678094, -8.576295), 
+                    });  
+              marker5 = new google.maps.Marker({ 
+         //icon:'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+                        map: map, 
+              title: "Pedestrian Living Bridge",
+                        position: new google.maps.LatLng(52.676647, -8.570298), 
+                    }); 
+              
+          marker6 = new google.maps.Marker({ 
+         //icon:'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+                        map: map, 
+              title: "Kemmy Business School",
+                        position: new google.maps.LatLng(52.672675, -8.576993), 
+                    }); 
+              marker7 = new google.maps.Marker({ 
+         //icon:'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+                        map: map, 
+              title: "Cappavilla Village",
+                        position: new google.maps.LatLng(52.678868, -8.566510), 
+                    }); 
+               marker8 = new google.maps.Marker({ 
+         //icon:'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+                        map: map, 
+              title: "Health Sciences",
+                        position: new google.maps.LatLng(2.677845, -8.568787), 
+                    }); 
+               marker9 = new google.maps.Marker({ 
+         //icon:'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+                        map: map, 
+              title: "Irish World Academy",
+                        position: new google.maps.LatLng(52.678206, -8.570289), 
+                    }); 
+ marker10 = new google.maps.Marker({ 
+         //icon:'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+                        map: map, 
+              title: "Engineering Research Building and Millstream Courtyard",
+                        position: new google.maps.LatLng(52.675105, -8.573055), 
+                    }); 
+
+marker11 = new google.maps.Marker({ 
+         //icon:'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+                        map: map, 
+              title: "Glucksman Library and Information Service Building",
+                        position: new google.maps.LatLng(52.673256, -8.573509), 
+                    }); 
+
+
+marker12 = new google.maps.Marker({ 
+         //icon:'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+                        map: map, 
+              title: "Plassey House",
+                        position: new google.maps.LatLng(52.673615, -8.570727), 
+                    }); 
+
+	marker13 = new google.maps.Marker({ 
+         //icon:'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+                        map: map, 
+              title: "Student Centre",
+                        position: new google.maps.LatLng(52.673189, -8.570137), 
+                    }); 
+ 		      
+  marker14 = new google.maps.Marker({ 
+         //icon:'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+                        map: map, 
+              title: "President's House UL",
+                        position: new google.maps.LatLng(52.676989, -8.565654), 
+                    }); 
+          
+  marker15 = new google.maps.Marker({ 
+         //icon:'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+                        map: map, 
+              title: "Silver Apple Creche",
+                        position: new google.maps.LatLng(52.673068, -8.574978), 
+                    }); 
+
+
+  marker16 = new google.maps.Marker({ 
+         //icon:'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+                        map: map, 
+              title: "UL Boathouse",
+                        position: new google.maps.LatLng(52.675815, -8.583651), 
+                    }); 
+
+
+ marker17 = new google.maps.Marker({ 
+         //icon:'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+                        map: map, 
+              title: "PESS Building",
+                        position: new google.maps.LatLng(52.674734, -8.567883), 
+                    }); 
+
+ marker18 = new google.maps.Marker({ 
+         //icon:'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+                        map: map, 
+              title: "Schrodinger Building",
+                        position: new google.maps.LatLng(52.673775, -8.567338), 
+                    }); 
+
+
+
+  marker19 = new google.maps.Marker({ 
+         //icon:'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+                        map: map, 
+              title: "Plassey Village",
+                        position: new google.maps.LatLng(52.668438, -8.573956), 
+                    }); 
+
+
+  marker20 = new google.maps.Marker({ 
+         //icon:'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+                        map: map, 
+              title: "Analogue Devices Building",
+                        position: new google.maps.LatLng(52.673397, -8.568860), 
+                    }); 
+
+
+    marker21 = new google.maps.Marker({ 
+         //icon:'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+                        map: map, 
+              title: "Schuman Building",
+                        position: new google.maps.LatLng(52.673212, -8.577850), 
+                    }); 
+
+       marker22 = new google.maps.Marker({ 
+         //icon:'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+                        map: map, 
+              title: "Kilmurry Village",
+                        position: new google.maps.LatLng(52.674822, -8.563270), 
+                    }); 
+
+  marker23 = new google.maps.Marker({ 
+         //icon:'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+                        map: map, 
+              title: "Lonsdale Building",
+                        position: new google.maps.LatLng(52.673726, -8.568965), 
+                    }); 
+
+
+  marker24 = new google.maps.Marker({ 
+         //icon:'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+                        map: map, 
+              title: "Computer Science Building",
+                        position: new google.maps.LatLng(52.673915, -8.575558), 
+                    }); 
+
+
+  marker25 = new google.maps.Marker({ 
+         //icon:'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+                        map: map, 
+              title: "Sports Club Building",
+                        position: new google.maps.LatLng(52.673230, -8.564536), 
+                    }); 
+
+
+  marker26 = new google.maps.Marker({ 
+         //icon:'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+                        map: map, 
+              title: "Dromroe Village",
+                        position: new google.maps.LatLng(52.675928, -8.576989), 
+                    }); 
+
+
+  marker27 = new google.maps.Marker({ 
+         //icon:'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+                        map: map, 
+              title: "MSSI Building",
+                        position: new google.maps.LatLng(52.673726, -8.568965), 
+                    }); 
+
+
+
+    marker28 = new google.maps.Marker({ 
+         //icon:'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+                        map: map, 
+              title: "Thomond Village",
+                        position: new google.maps.LatLng(52.679759, -8.575868), 
+                    }); 
+
+      marker29 = new google.maps.Marker({ 
+         //icon:'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+                        map: map, 
+              title: "Languages Building",
+                        position: new google.maps.LatLng(52.675538, -8.573411), 
+                    }); 
+
+        marker30 = new google.maps.Marker({ 
+         //icon:'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+                        map: map, 
+              title: "Irish Chamber Orchestra Building",
+                        position: new google.maps.LatLng(52.678590, -8.566039), 
+                    }); 
+
+        marker31 = new google.maps.Marker({ 
+         //icon:'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+                        map: map, 
+              title: "Tierney Building",
+                        position: new google.maps.LatLng(52.674547, -8.577023), 
+                    }); 
+
+    
+
+        marker32 = new google.maps.Marker({ 
+         //icon:'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+                        map: map, 
+              title: "UL Sports pavilion",
+                        position: new google.maps.LatLng(52.679413, -8.570105), 
+                    }); 
+
+        marker33 = new google.maps.Marker({ 
+         //icon:'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+                        map: map, 
+              title: "International Business Centre",
+                        position: new google.maps.LatLng(52.673949, -8.577385), 
+                    }); 
+
+     
+        marker34 = new google.maps.Marker({ 
+         //icon:'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+                        map: map, 
+              title: "Dromroe Village",
+                        position: new google.maps.LatLng(52.675928, -8.576989), 
+                    }); 
+
+        marker35 = new google.maps.Marker({ 
+         //icon:'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+                        map: map, 
+              title: "Health Sciences",
+                        position: new google.maps.LatLng(52.677845, -8.568787), 
+                    }); 
+
+       marker36 = new google.maps.Marker({ 
+         //icon:'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+                        map: map, 
+              title: "Lonsdale Building",
+                        position: new google.maps.LatLng(52.673726, -8.568965), 
+                    }); 
+
+
+
+			if (navigator.geolocation) navigator.geolocation.getCurrentPosition(function(pos) {
+    				var me = new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude);
+				var myloc = new google.maps.Marker({
+    					clickable: false,
+    					icon: new google.maps.MarkerImage('http://maps.gstatic.com/mapfiles/mobile/mobileimgs2.png',
+                                                    new google.maps.Size(22,22),
+                                                    new google.maps.Point(0,18),
+                                                    new google.maps.Point(11,11)),
+    					shadow: null,
+    					zIndex: 999,
+    					map: map, // your google.maps.Map object
+			});
+    				myloc.setPosition(me);
+			}, function(error) {
+   				 // ...
+			});
+	            google.maps.event.addListener(marker1, "click", function() {
+          infowindow.setContent('<p><img src="150icon/04.jpg"/></p><p align="center"><b>The Foundation Building</b><br><a href="FD.html" target="_self" style="text-decoration:none;"><b>Start this trail</b></a></p><p></p>');
+          infowindow.open(map, this);
+        });
+
+              google.maps.event.addListener(marker2, "click", function() {
+          infowindow.setContent('<p><img src="150icon/11.jpg"/></p><p align="center"><b>Main Building</b><br><a href="MD.html" target="_self" style="text-decoration:none;"><b>Start this trail</b></a></p><p></p>');
+          infowindow.open(map, this);
+        });
+         google.maps.event.addListener(marker3, "click", function() {
+          infowindow.setContent('<p><img src="150icon/05.jpg"/></p><p align="center"><b>Medical School</b><br><a href="MS.html" target="_self" style="text-decoration:none;"><b>Start this trail</b></a></p><p></p>');
+          infowindow.open(map, this);
+        });
+
+         google.maps.event.addListener(marker4, "click", function() {
+          infowindow.setContent('<p><img src="150icon/06.jpg"/></p><p align="center"><b>University Bridge</b><br><a href="SB.html" target="_self" style="text-decoration:none;"><b>Start this trail</b></a></p><p></p>');
+          infowindow.open(map, this);
+        });
+   google.maps.event.addListener(marker5, "click", function() {
+          infowindow.setContent('<p><img src="150icon/02.jpg"/></p><p align="center"><b>Pedestrian Living Bridge</b><br><a href="LB.html" target="_self" style="text-decoration:none;"><b>Start this trail</b></a></p><p></p>');
+          infowindow.open(map, this);
+        });
+                 google.maps.event.addListener(marker6, "click", function() {
+          infowindow.setContent('<p><img src="150icon/07.jpg"/></p><p align="center"><b>Kemmy Business School</b><br><a href="KBS.html" target="_self" style="text-decoration:none;"><b>Start this trail</b></a></p><p></p>');
+          infowindow.open(map, this);
+        });
+                         google.maps.event.addListener(marker7, "click", function() {
+          infowindow.setContent('<p><img src="150icon/01.jpg"/></p><p align="center"><b>Cappavilla Village</b><br><a href="CAPPA.html" target="_self" style="text-decoration:none;"><b>Start this trail</b></a></p><p></p>');
+          infowindow.open(map, this);
+        });
+
+      
+
+                                   google.maps.event.addListener(marker8, "click", function() {
+          infowindow.setContent('<p><img src="150icon/14.jpg"/></p><p align="center"><b>Health Sciences</b><br><a href="HC.html" target="_self" style="text-decoration:none;"><b>Start this trail</b></a></p><p></p>');
+          infowindow.open(map, this);
+        });
+
+                                        google.maps.event.addListener(marker9, "click", function() {
+          infowindow.setContent('<p><img src="150icon/15.jpg"/></p><p align="center"><b>Irish World Academy</b><br><a href="IWA.html" target="_self" style="text-decoration:none;"><b>Start this trail</b></a></p><p></p>');
+          infowindow.open(map, this);
+        });
+
+                                                                
+google.maps.event.addListener(marker10, "click", function() {
+          infowindow.setContent('<p><img src="150icon/10.jpg"/></p><p align="center"><b>Engineering Research Building <br> and Millstream Courtyard</b><br><a href="ER.html" target="_self" style="text-decoration:none;"><b>Start this trail</b></a></p><p></p>');
+          infowindow.open(map, this);
+        });
+
+
+
+    google.maps.event.addListener(marker11, "click", function() {
+          infowindow.setContent('<p><img src="150icon/b15.jpg"/></p><p align="center"><b>Glucksman Library and <br>Information Service Building</b><br><a href="GL.html" target="_self" style="text-decoration:none;"><b>Start this trail</b></a></p><p></p>');
+          infowindow.open(map, this);
+        });
+
+
+  google.maps.event.addListener(marker12, "click", function() {
+          infowindow.setContent('<p><img src="150icon/b12.jpg"/></p><p align="center"><b>Plassy House</b><br><a href="PH.html" target="_self" style="text-decoration:none;"><b>Start this trail</b></a></p><p></p>');
+          infowindow.open(map, this);
+        });
+
+
+
+  google.maps.event.addListener(marker13, "click", function() {
+          infowindow.setContent('<p><img src="150icon/b13.jpg"/></p><p align="center"><b>Student Centre</b><br><a href="SC.html" target="_self" style="text-decoration:none;"><b>Start this trail</b></a></p><p></p>');
+          infowindow.open(map, this);
+        });
+
+
+
+ google.maps.event.addListener(marker14, "click", function() {
+          infowindow.setContent('<p><img src="150icon/b11.jpg"/></p><p align="center"><b>President House UL</b><br><a href="PresidentH.html" target="_self" style="text-decoration:none;"><b>Start this trail</b></a></p><p></p>');
+          infowindow.open(map, this);
+        });
+
+
+
+
+
+
+ google.maps.event.addListener(marker15, "click", function() {
+          infowindow.setContent('<p><img src="150icon/b14.jpg"/></p><p align="center"><b>Silver Apple Creche</b><br><a href="SAC.html" target="_self" style="text-decoration:none;"><b>Start this trail</b></a></p><p></p>');
+          infowindow.open(map, this);
+        });
+
+
+
+
+ google.maps.event.addListener(marker16, "click", function() {
+          infowindow.setContent('<p><img src="150icon/03.jpg"/></p><p align="center"><b>UL Boathouse</b><br><a href="ULboat.html" target="_self" style="text-decoration:none;"><b>Start this trail</b></a></p><p></p>');
+          infowindow.open(map, this);
+        });
+
+
+
+google.maps.event.addListener(marker17, "click", function() {
+          infowindow.setContent('<p><img src="150icon/b16.jpg"/></p><p align="center"><b>PESS Building</b><br><a href="PE.html" target="_self" style="text-decoration:none;"><b>Start this trail</b></a></p><p></p>');
+          infowindow.open(map, this);
+        });
+
+
+google.maps.event.addListener(marker18, "click", function() {
+          infowindow.setContent('<p><img src="150icon/a24.jpg"/></p><p align="center"><b>Schrodinger Building</b><br><a href="Schrod.html" target="_self" style="text-decoration:none;"><b>Start this trail</b></a></p><p></p>');
+          infowindow.open(map, this);
+        });
+
+google.maps.event.addListener(marker19, "click", function() {
+          infowindow.setContent('<p><img src="150icon/a8.jpg"/></p><p align="center"><b>Plassey Village</b><br><a href="PV.html" target="_self" style="text-decoration:none;"><b>Start this trail</b></a></p><p></p>');
+          infowindow.open(map, this);
+        });
+
+google.maps.event.addListener(marker20, "click", function() {
+          infowindow.setContent('<p><img src="150icon/a1.jpg"/></p><p align="center"><b>Analogue Devices Building</b><br><a href="AD.html" target="_self" style="text-decoration:none;"><b>Start this trail</b></a></p><p></p>');
+          infowindow.open(map, this);
+        });
+
+google.maps.event.addListener(marker21, "click", function() {
+          infowindow.setContent('<p><img src="150icon/a9.jpg"/></p><p align="center"><b>Schuman Building</b><br><a href="Schuman.html" target="_self" style="text-decoration:none;"><b>Start this trail</b></a></p><p></p>');
+          infowindow.open(map, this);
+        });
+
+google.maps.event.addListener(marker22, "click", function() {
+          infowindow.setContent('<p><img src="150icon/a11.jpg"/></p><p align="center"><b>Kilmurry Village</b><br><a href="KV.html" target="_self" style="text-decoration:none;"><b>Start this trail</b></a></p><p></p>');
+          infowindow.open(map, this);
+        });
+
+google.maps.event.addListener(marker23, "click", function() {
+          infowindow.setContent('<p><img src="150icon/a25.jpg"/></p><p align="center"><b>Lonsdale Building</b><br><a href="LonB.html" target="_self" style="text-decoration:none;"><b>Start this trail</b></a></p><p></p>');
+          infowindow.open(map, this);
+        });
+
+google.maps.event.addListener(marker24, "click", function() {
+          infowindow.setContent('<p><img src="150icon/a5.jpg"/></p><p align="center"><b>Computer Science Building</b><br><a href="CSB.html" target="_self" style="text-decoration:none;"><b>Start this trail</b></a></p><p></p>');
+          infowindow.open(map, this);
+    });
+
+google.maps.event.addListener(marker25, "click", function() {
+          infowindow.setContent('<p><img src="150icon/a17.jpg"/></p><p align="center"><b>Sports Club Building</b><br><a href="SCB.html" target="_self" style="text-decoration:none;"><b>Start this trail</b></a></p><p></p>');
+          infowindow.open(map, this);
+        });
+
+google.maps.event.addListener(marker26, "click", function() {
+          infowindow.setContent('<p><img src="150icon/a16.jpg"/></p><p align="center"><b>Dromroe Village</b><br><a href="DV.html" target="_self" style="text-decoration:none;"><b>Start this trail</b></a></p><p></p>');
+          infowindow.open(map, this);
+        });
+
+google.maps.event.addListener(marker27, "click", function() {
+          infowindow.setContent('<p><img src="150icon/a3.jpg"/></p><p align="center"><b>MSSI Building</b><br><a href="MSSI.html" target="_self" style="text-decoration:none;"><b>Start this trail</b></a></p><p></p>');
+          infowindow.open(map, this);
+        });
+
+
+
+google.maps.event.addListener(marker28, "click", function() {
+          infowindow.setContent('<p><img src="150icon/a2.jpg"/></p><p align="center"><b>Thomond Village</b><br><a href="TV.html" target="_self" style="text-decoration:none;"><b>Start this trail</b></a></p><p></p>');
+          infowindow.open(map, this);
+        });
+
+
+
+google.maps.event.addListener(marker29, "click", function() {
+          infowindow.setContent('<p><img src="150icon/a15.jpg"/></p><p align="center"><b>Languages Building</b><br><a href="LanB.html" target="_self" style="text-decoration:none;"><b>Start this trail</b></a></p><p></p>');
+          infowindow.open(map, this);
+        });
+
+google.maps.event.addListener(marker30, "click", function() {
+          infowindow.setContent('<p><img src="150icon/a13.jpg"/></p><p align="center"><b>Irish Chamber Orchestra Building</b><br><a href="ICO.html" target="_self" style="text-decoration:none;"><b>Start this trail</b></a></p><p></p>');
+          infowindow.open(map, this);
+        });
+
+google.maps.event.addListener(marker31, "click", function() {
+          infowindow.setContent('<p><img src="150icon/a10.jpg"/></p><p align="center"><b>Tierney Building</b><br><a href="TB.html" target="_self" style="text-decoration:none;"><b>Start this trail</b></a></p><p></p>');
+          infowindow.open(map, this);
+        });
+
+google.maps.event.addListener(marker32, "click", function() {
+          infowindow.setContent('<p><img src="150icon/a12.jpg"/></p><p align="center"><b>UL Sports Pavilion</b><br><a href="SP.html" target="_self" style="text-decoration:none;"><b>Start this trail</b></a></p><p></p>');
+          infowindow.open(map, this);
+        });
+
+google.maps.event.addListener(marker33, "click", function() {
+          infowindow.setContent('<p><img src="150icon/a6.jpg"/></p><p align="center"><b>International Business Centre</b><br><a href="IBC.html" target="_self" style="text-decoration:none;"><b>Start this trail</b></a></p><p></p>');
+          infowindow.open(map, this);
+        });
+
+google.maps.event.addListener(marker34, "click", function() {
+          infowindow.setContent('<p><img src="150icon/a16.jpg"/></p><p align="center"><b>Dromroe Village</b><br><a href="DV.html" target="_self" style="text-decoration:none;"><b>Start this trail</b></a></p><p></p>');
+          infowindow.open(map, this);
+        });
+
+google.maps.event.addListener(marker35, "click", function() {
+          infowindow.setContent('<p><img src="150icon/14.jpg"/></p><p align="center"><b>Health Sciences</b><br><a href="HC.html" target="_self" style="text-decoration:none;"><b>Start this trail</b></a></p><p></p>');
+          infowindow.open(map, this);
+        });
+
+google.maps.event.addListener(marker36, "click", function() {
+          infowindow.setContent('<p><img src="150icon/a25.jpg"/></p><p align="center"><b>Lonsdale Building</b><br><a href="LonB.html" target="_self" style="text-decoration:none;"><b>Start this trail</b></a></p><p></p>');
+          infowindow.open(map, this);
+        });
+
+                }); 
+        </script>
+</head>
+<body>
+<div data-role="page" id="map_page" data-theme="a">
+  <div data-role="header" data-theme="a">
+    <a class="ui-icon-nodisc" href="BT01.html" target="_self" data-role="button" data-icon="arrow-l" data-corner="false"  data-transition="none" data-iconpos="notext">Previous</a>
+    <h1>UL Buildings</h1>
+ <div data-role="navbar">
+      <ul>
+        <li><a href="BT01.html" target="_self" data-transition="none">List View</a></li>
+        <li><a href="#" class="ui-btn-active ui-state-persist" data-transition="none">Map View</a></li>
+      </ul>
+    </div>
+  </div>
+     <div class="ui-bar-c ui-corner-all ui-shadow" style="border:0px;">
+      <div id="map_canvas" style="height:400px;"></div>
+    </div>
+<p><img src="http://img145.imageshack.us/img145/2147/bluedotwh0.jpg" width="8%" height="8%"> refers to my location.</p>
+<p><img src="http://maps.google.com/mapfiles/ms/icons/red-dot.png" /> refers to a point that can start a trail.</p>
+<p><img src="http://maps.google.com/mapfiles/ms/icons/blue-dot.png" /> refers to a point that cannot start a trail.</p>
+  </div>
+</div>
+
+</body>
+</html>

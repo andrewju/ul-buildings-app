@@ -1,0 +1,324 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>UL Arts</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<link rel="stylesheet" href="themes/building.min.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?v=3&sensor=true&language=en"></script>
+        <script type="text/javascript">
+             $(document).on('pageshow', '#map_page', function(e, data) {
+
+ 			var marker1, marker2, marker3, marker4, marker5, marker6, marker7, marker8, marker9, marker10, marker11, marker12, maker13, marker14, marker15, marker16, marker17, marker18, marker19, marker20,map,infoWindow,myLocation = { 
+                            lat: 52.674570,
+                            lon: -8.575366
+                        }, 
+                        mapOptions = { 
+                            zoom: 15, 
+                            mapTypeId: google.maps.MapTypeId.PLAN, 
+                            center: new google.maps.LatLng(myLocation.lat, myLocation.lon) 
+                        }; 
+		     var infowindow = new google.maps.InfoWindow({});
+                    $('#map_canvas').css("height", "400px").css("padding", "0px"); 
+                    map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);     
+                    marker1 = new google.maps.Marker({ 
+                        map: map, 
+		          title: "Car Park 1",
+                        position: new google.maps.LatLng(52.672780, -8.571715), 
+                    });  
+
+                    marker2 = new google.maps.Marker({ 
+         //icon:'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+                        map: map, 
+              title: "Car Park 2",
+                        position: new google.maps.LatLng(52.672605, -8.570837), 
+                    });    
+        
+          marker3 = new google.maps.Marker({ 
+                        map: map, 
+         //icon:'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+              title: "Car Park 3",
+                        position: new google.maps.LatLng(52.672940, -8.567816), 
+                    }); 
+
+           marker4 = new google.maps.Marker({ 
+         //icon:'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+                        map: map, 
+              title: "Car Park 4",
+                        position: new google.maps.LatLng(52.673321, -8.567296), 
+                    });  
+              marker5 = new google.maps.Marker({ 
+         //icon:'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+                        map: map, 
+              title: "Car Park 5",
+                        position: new google.maps.LatLng(52.673786, -8.566553), 
+                    }); 
+              
+          marker6 = new google.maps.Marker({ 
+         //icon:'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+                        map: map, 
+              title: "Car Park 6",
+                        position: new google.maps.LatLng(52.674310, -8.562219), 
+                    }); 
+              marker7 = new google.maps.Marker({ 
+         //icon:'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+                        map: map, 
+              title: "Car Park 7",
+                        position: new google.maps.LatLng(52.672654, -8.564933), 
+                    }); 
+               marker8 = new google.maps.Marker({ 
+         //icon:'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+                        map: map, 
+              title: "Car Park 8",
+                        position: new google.maps.LatLng(52.671743, -8.565673), 
+                    }); 
+               marker9 = new google.maps.Marker({ 
+         //icon:'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+                        map: map, 
+              title: "Car Park 16",
+                        position: new google.maps.LatLng(52.672529, -8.576539), 
+                    }); 
+ marker10 = new google.maps.Marker({ 
+         //icon:'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+                        map: map, 
+              title: "Car Park 17",
+                        position: new google.maps.LatLng(52.675190, -8.576503), 
+                    }); 
+
+marker11 = new google.maps.Marker({ 
+         //icon:'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+                        map: map, 
+              title: "Car Park 18",
+                        position: new google.maps.LatLng(52.674907, -8.574121), 
+                    }); 
+
+
+marker12 = new google.maps.Marker({ 
+         //icon:'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+                        map: map, 
+              title: "Car Park 19",
+                        position: new google.maps.LatLng(52.675399, -8.573220), 
+                    }); 
+
+	marker13 = new google.maps.Marker({ 
+         //icon:'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+                        map: map, 
+              title: "Car Park 20",
+                        position: new google.maps.LatLng(52.674591, -8.572517), 
+                    }); 
+ 		      
+  marker14 = new google.maps.Marker({ 
+         //icon:'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+                        map: map, 
+              title: "Car Park 21",
+                        position: new google.maps.LatLng(52.674785, -8.578309), 
+                    }); 
+          
+  marker15 = new google.maps.Marker({ 
+         //icon:'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+                        map: map, 
+              title: "Car Park 22",
+                        position: new google.maps.LatLng(52.674258, -8.577923), 
+                    }); 
+
+
+  marker16 = new google.maps.Marker({ 
+         //icon:'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+                        map: map, 
+              title: "Car Park 23",
+                        position: new google.maps.LatLng(52.673422, -8.578658), 
+                    }); 
+
+
+ marker17 = new google.maps.Marker({ 
+         //icon:'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+                        map: map, 
+              title: "Car Park 24",
+                        position: new google.maps.LatLng(52.679949, -8.569128), 
+                    }); 
+
+ marker18 = new google.maps.Marker({ 
+         //icon:'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+                        map: map, 
+              title: "Car Park 25",
+                        position: new google.maps.LatLng(52.680467, -8.570579), 
+                    }); 
+
+
+
+  marker19 = new google.maps.Marker({ 
+         //icon:'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+                        map: map, 
+              title: "Car Park 26",
+                        position: new google.maps.LatLng(52.680399, -8.568943), 
+                    }); 
+
+
+
+ 
+
+     
+
+			if (navigator.geolocation) navigator.geolocation.getCurrentPosition(function(pos) {
+    				var me = new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude);
+				var myloc = new google.maps.Marker({
+    					clickable: false,
+    					icon: new google.maps.MarkerImage('http://maps.gstatic.com/mapfiles/mobile/mobileimgs2.png',
+                                                    new google.maps.Size(22,22),
+                                                    new google.maps.Point(0,18),
+                                                    new google.maps.Point(11,11)),
+    					shadow: null,
+    					zIndex: 999,
+    					map: map, // your google.maps.Map object
+			});
+    				myloc.setPosition(me);
+			}, function(error) {
+   				 // ...
+			});
+	            google.maps.event.addListener(marker1, "click", function() {
+          infowindow.setContent('<p align="center"><b>Car Park 1</b><br><a href="http://maps.google.com/maps?q=52.672780,-8.571715(Car Park 1)&z=15" target="_self" style="text-decoration:none;"><b>Guide me there</b></a></p>');
+          infowindow.open(map, this);
+        });
+
+              google.maps.event.addListener(marker2, "click", function() {
+          infowindow.setContent('<p align="center"><b>Car Park 2</b><br><a href="http://maps.google.com/maps?q=52.672605,-8.570837(Car Park 2)&z=15" target="_self" style="text-decoration:none;"><b>Guide me there</b></a></p>');
+          infowindow.open(map, this);
+        });
+         google.maps.event.addListener(marker3, "click", function() {
+          infowindow.setContent('<p align="center"><b>Car Park 3</b><br><a href="http://maps.google.com/maps?q=52.672940,-8.567816(Car Park 3)&z=15" target="_self" style="text-decoration:none;"><b>Guide me there</b></a></p>');
+          infowindow.open(map, this);
+        });
+
+         google.maps.event.addListener(marker4, "click", function() {
+          infowindow.setContent('<p align="center"><b>Car Park 4</b><br><a href="http://maps.google.com/maps?q=52.673321,-8.567296(Car Park 4)&z=15" target="_self" style="text-decoration:none;"><b>Guide me there</b></a></p>');
+          infowindow.open(map, this);
+        });
+   google.maps.event.addListener(marker5, "click", function() {
+          infowindow.setContent('<p align="center"><b>Car Park 5</b><br><a href="http://maps.google.com/maps?q=52.673786,-8.566553(Car Park 5)&z=15" target="_self" style="text-decoration:none;"><b>Guide me there</b></a></p>');
+          infowindow.open(map, this);
+        });
+                 google.maps.event.addListener(marker6, "click", function() {
+          infowindow.setContent('<p align="center"><b>Car Park 6</b><br><a href="http://maps.google.com/maps?q=52.674310,-8.562219(Car Park 6)&z=15" target="_self" style="text-decoration:none;"><b>Guide me there</b></a></p>');
+          infowindow.open(map, this);
+        });
+                         google.maps.event.addListener(marker7, "click", function() {
+          infowindow.setContent('<p align="center"><b>Car Park 7</b><br><a href="http://maps.google.com/maps?q=52.672654,-8.564933(Car Park 7)&z=15" target="_self" style="text-decoration:none;"><b>Guide me there</b></a></p>');
+          infowindow.open(map, this);
+        });
+
+      
+
+                                   google.maps.event.addListener(marker8, "click", function() {
+          infowindow.setContent('<p align="center"><b>Car Park 8</b><br><a href="http://maps.google.com/maps?q=52.671743,-8.565673(Car Park 8)&z=15" target="_self" style="text-decoration:none;"><b>Guide me there</b></a></p>');
+          infowindow.open(map, this);
+        });
+
+    
+
+                                                                
+google.maps.event.addListener(marker9, "click", function() {
+          infowindow.setContent('<p align="center"><b>Car Park 16</b><br><a href="http://maps.google.com/maps?q=52.672529,-8.576539(Car Park 16)&z=15" target="_self" style="text-decoration:none;"><b>Guide me there</b></a></p>');
+          infowindow.open(map, this);
+        });
+
+
+
+    google.maps.event.addListener(marker10, "click", function() {
+          infowindow.setContent('<p align="center"><b>Car Park 17</b><br><a href="http://maps.google.com/maps?q=52.675190,-8.576503(Car Park 17)&z=15" target="_self" style="text-decoration:none;"><b>Guide me there</b></a></p>');
+          infowindow.open(map, this);
+        });
+
+
+  google.maps.event.addListener(marker11, "click", function() {
+          infowindow.setContent('<p align="center"><b>Car Park 18</b><br><a href="http://maps.google.com/maps?q=52.674907,-8.574121(Car Park 18)&z=15" target="_self" style="text-decoration:none;"><b>Guide me there</b></a></p>');
+          infowindow.open(map, this);
+        });
+
+
+
+  google.maps.event.addListener(marker12, "click", function() {
+          infowindow.setContent('<p align="center"><b>Car Park 19</b><br><a href="http://maps.google.com/maps?q=52.675399,-8.573220(Car Park 19)&z=15" target="_self" style="text-decoration:none;"><b>Guide me there</b></a></p>');
+          infowindow.open(map, this);
+        });
+
+
+
+ google.maps.event.addListener(marker13, "click", function() {
+          infowindow.setContent('<p align="center"><b>Car Park 20</b><br><a href="http://maps.google.com/maps?q=52.674591,-8.572517(Car Park 20)&z=15" target="_self" style="text-decoration:none;"><b>Guide me there</b></a></p>');
+          infowindow.open(map, this);
+        });
+
+
+
+
+
+
+ google.maps.event.addListener(marker14, "click", function() {
+          infowindow.setContent('<p align="center"><b>Car Park 21</b><br><a href="http://maps.google.com/maps?q=52.674785,-8.578309(Car Park 21)&z=15" target="_self" style="text-decoration:none;"><b>Guide me there</b></a></p>');
+          infowindow.open(map, this);
+        });
+
+
+
+
+ google.maps.event.addListener(marker15, "click", function() {
+          infowindow.setContent('<p align="center"><b>Car Park 22</b><br><a href="http://maps.google.com/maps?q=52.674258,-8.577923(Car Park 22)&z=15" target="_self" style="text-decoration:none;"><b>Guide me there</b></a></p>');
+          infowindow.open(map, this);
+        });
+
+
+
+google.maps.event.addListener(marker16, "click", function() {
+          infowindow.setContent('<p align="center"><b>Car Park 23</b><br><a href="http://maps.google.com/maps?q=52.673422,-8.578658(Car Park 23)&z=15" target="_self" style="text-decoration:none;"><b>Guide me there</b></a></p>');
+          infowindow.open(map, this);
+        });
+
+
+google.maps.event.addListener(marker17, "click", function() {
+          infowindow.setContent('<p align="center"><b>Car Park 24</b><br><a href="http://maps.google.com/maps?q=52.679949,-8.569128(Car Park 24)&z=15" target="_self" style="text-decoration:none;"><b>Guide me there</b></a></p>');
+          infowindow.open(map, this);
+        });
+
+google.maps.event.addListener(marker18, "click", function() {
+          infowindow.setContent('<p align="center"><b>Car Park 25</b><br><a href="http://maps.google.com/maps?q=52.680467,-8.570579(Car Park 25)&z=15" target="_self" style="text-decoration:none;"><b>Guide me there</b></a></p>');
+          infowindow.open(map, this);
+        });
+
+google.maps.event.addListener(marker19, "click", function() {
+          infowindow.setContent('<p align="center"><b>Car Park 26</b><br><a href="http://maps.google.com/maps?q=52.680399,-8.568943(Car Park 26)&z=15" target="_self" style="text-decoration:none;"><b>Guide me there</b></a></p>');
+          infowindow.open(map, this);
+        });
+
+google.maps.event.addListener(marker20, "click", function() {
+          infowindow.setContent('<p align="center"><b>Car Park 27</b><br><a href="http://maps.google.com/maps?q=52.679852, -8.568146(Car Park 27)&z=15" target="_self" style="text-decoration:none;"><b>Guide me there</b></a></p>');
+          infowindow.open(map, this);
+        }); 
+
+
+                }); 
+
+
+        </script>
+</head>
+<body>
+<div data-role="page" id="map_page" data-theme="a">
+  <div data-role="header" data-theme="a">
+    <a class="ui-icon-nodisc" href="BT01.html" target="_self" data-role="button" data-icon="arrow-l" data-corner="false"  data-transition="none" data-iconpos="notext">Previous</a>
+    <h1>Car Parks</h1>
+  </div>
+     <div class="ui-bar-c ui-corner-all ui-shadow" style="border:0px;">
+      <div id="map_canvas" style="height:400px;"></div>
+    </div>
+<p><img src="http://img145.imageshack.us/img145/2147/bluedotwh0.jpg" width="8%" height="8%"> refers to my location.</p>
+<p><img src="http://maps.google.com/mapfiles/ms/icons/red-dot.png" /> refers to a point that can start a trail.</p>
+<p><img src="http://maps.google.com/mapfiles/ms/icons/blue-dot.png" /> refers to a point that cannot start a trail.</p>
+  </div>
+</div>
+
+</body>
+</html>
